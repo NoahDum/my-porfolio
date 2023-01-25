@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import TypingAnimation from './components/TypingAnim';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="center">
+      <h1>&lt; Noah Duminil &#47;&gt;</h1>
+      <h2><TypingAnimation text="Bienvenue sur mon portfolio !"/></h2>
+      </div>
     </div>
   );
 }
