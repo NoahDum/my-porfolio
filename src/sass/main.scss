@@ -2,3 +2,21 @@
     display: flex;
     justify-content: space-between;
 }
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 42vh;
+}
+.enter{
+    width: 10vw;
+    border-radius: 30px;
+    border: 0;
+    padding: 10px;
+    background-color: #F6F5EC;
+    color: #3F4E4F;
+    &:hover{
+        cursor: pointer;
+    }
+}
