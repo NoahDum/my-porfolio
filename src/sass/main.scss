@@ -10,11 +10,29 @@
 .container {
     padding: 0 3rem;
 }
-
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    h1{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .i{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.nav-center{
+    display: flex;
+    justify-content: center;
+    li{
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }
 .center{
     display: flex;
@@ -37,12 +55,16 @@
     }
 }
 .contain{
-    margin-top: 5vh;
+    margin-top: 2vh;
     @media screen and (min-width: $lg-breakpoint) {
         display: flex;
         align-items: center;
+        flex-direction: row;
     }
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     p{
         padding: 5px    ;
         text-align: center;
@@ -55,6 +77,12 @@
             }
         }
     }
+    img{
+        height: 80vh;
+    }
+}
+.about{
+    max-height: 100vh;
 }
 .footer{
     background-color: #F6F5EC;
@@ -67,5 +95,16 @@
     .icon{
         display: flex;
         justify-content: space-around;
+        a{
+            margin: 10px;
+        }
+        @media screen and (min-width: $md-breakpoint) {
+            margin-left: 20px;
+        }
+    }
+    .title-nav{
+        @media screen and (min-width: $md-breakpoint) {
+            margin-left: -20px;
+        }
     }
 }

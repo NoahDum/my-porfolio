@@ -17,8 +17,9 @@ const Header = () => {
             <nav>
                 <div className="menu">
                     <h1 onClick={() => navigate('/')}> &lt; Noah Duminil &#47; &gt; </h1>
-                    <FaBars id="menu-button" onClick={toggleMenu} size={35} />
+                    <FaBars id="menu-button" onClick={toggleMenu} size={35} className="i"/>
                 </div>
+                <div className="nav-center">
                 <ul id="menu" style={{ display: menuOpen ? 'block' : 'none' }}>
                     <li onClick={() => navigate('/project')}>
                         Mes projets
@@ -27,6 +28,7 @@ const Header = () => {
                         Mes maitrises
                     </li>
                 </ul>
+                </div>
             </nav>
         </div>
 

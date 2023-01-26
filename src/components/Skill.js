@@ -7,9 +7,11 @@ const Skill = () => {
     <div>
       <Header/>
       <main>
-
+        <p>flex </p>
       </main>
-      <Footer/>
+      <footer>
+      <Footer/>        
+      </footer>
     </div>
   )
 }
