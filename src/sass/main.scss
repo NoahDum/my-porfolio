@@ -56,3 +56,16 @@
         }
     }
 }
+.footer{
+    background-color: #F6F5EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: #3F4E4F;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-around;
+    }
+}

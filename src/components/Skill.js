@@ -1,8 +1,16 @@
 import React from 'react'
+import Footer from './Footer'
+import Header from './Header'
 
 const Skill = () => {
   return (
-    <div>Skill</div>
+    <div>
+      <Header/>
+      <main>
+
+      </main>
+      <Footer/>
+    </div>
   )
 }
 
