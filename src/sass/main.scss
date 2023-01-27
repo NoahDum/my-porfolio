@@ -28,7 +28,14 @@
 .nav-center{
     display: flex;
     justify-content: center;
+    #menu{
+        list-style-type: none;
+    }
     li{
+        a{
+            text-decoration: none;
+            color: #F6F5EC;
+        }
         &:hover{
             cursor: pointer;
         }
@@ -89,6 +96,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     h2{
         color: #3F4E4F;
     }
@@ -108,3 +119,38 @@
         }
     }
 }
+
+.element {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #F6F5EC;
+    width: 35vw;
+    height: 30vh;
+    @media screen and (max-width: 763px) {
+      width: max-content;
+    }
+    p{
+      color: #3F4E4F;
+      width: 50vw;
+    }
+    .logo{
+        color: #3F4E4F;
+    }
+    a{
+        color: #3F4E4F;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            font-size: 35px;
+        }
+    }
+  }
+
+  .forwardandbackicons {
+    transition: 0.3s;
+  }
+  
+  .forwardandbackicons:hover {
+    cursor: pointer;
+  }
