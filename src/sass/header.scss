@@ -1,0 +1,53 @@
+@import "variables";
+
+.headerContainer {
+    background-color: $second-color;
+    border-radius: 0 0 30px 30px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2VW;
+        .menu {
+            color: $third-color;
+            padding: 0 2vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .i {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .nav-center {
+            display: flex;
+            justify-content: center;
+
+            #menu {
+                list-style-type: none;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #F6F5EC;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

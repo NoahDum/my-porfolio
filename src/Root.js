@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from "./App"
-import About from './components/About'
+import Main from "./components/Main"
 import Project from './components/Project'
 import Skill from './components/Skill'
 
@@ -10,7 +10,7 @@ const Root = () => {
     <BrowserRouter>
         <Routes>
             <Route exact path = "/" element ={<App/>}/>
-            <Route path = "/about" element ={<About/>}/>
+            <Route path = "/about" element ={<Main/>}/>
             <Route exact path = "/project" element ={<Project/>}/>
             <Route exact path = "/skill" element ={<Skill/>}/>
         </Routes>
