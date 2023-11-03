@@ -2,8 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from "./App"
 import Main from "./components/Main"
-import Project from './components/Project'
-import Skill from './components/Skill'
+import DumWeb from './components/DumWeb'
 
 const Root = () => {
   return (
@@ -11,8 +10,7 @@ const Root = () => {
         <Routes>
             <Route exact path = "/" element ={<App/>}/>
             <Route path = "/about" element ={<Main/>}/>
-            <Route exact path = "/project" element ={<Project/>}/>
-            <Route exact path = "/skill" element ={<Skill/>}/>
+            <Route exact path = "/dumweb" element ={<DumWeb/>}/>
         </Routes>
     </BrowserRouter>
   )
