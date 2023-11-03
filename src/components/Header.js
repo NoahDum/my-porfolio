@@ -1,8 +1,9 @@
-import React, { useState , useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import '../sass/header.scss'
 import { useNavigate } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Header = () => {
@@ -11,6 +12,7 @@ const Header = () => {
 
     const toggleMenu = () => {
         setMenuOpen(prevState => !prevState);
+        console.log(menuOpen)
     }
     let location = useLocation();
 
@@ -35,7 +37,9 @@ const Header = () => {
     }, []);
     return (
         <div className="headerContainer">
-            <nav>
+            <nav style={{
+                flexDirection: menuOpen ? 'column' : 'row',
+            }}>
                 <div className="menu">
                     <h1 onClick={() => navigate('/')}> &lt; Noah Duminil &#47; &gt; </h1>
                     {isMobile && (
@@ -43,45 +47,43 @@ const Header = () => {
                     )}
                 </div>
                 <div className="nav-center">
-                    <ul id="menu" style={{ display: menuOpen || !isMobile ? 'flex' : 'none' }}>
-                        <li>
-                            {location.pathname !== "/about" && <Link to="/about">Ma présentation</Link>}
-                        </li>
-                        <li>
-                            {location.pathname !== "/skill" && <Link to="/skill">Mes compétences</Link>}
-                        </li>
-                        <li>
-                            {location.pathname !== "/project" && <Link to="/project">Mes projets</Link>}
-                        </li>
-                    </ul>
+                    <div className="navList" style={{
+                        display: menuOpen || !isMobile ? 'flex' : 'none',
+                        flexDirection: menuOpen || isMobile ? 'column' : 'row',
+                    }}>
+                        <Link to="/about#about">About</Link>
+                        <Link to="/about#project">Project</Link>
+                        <Link to="/about#skills">Skills</Link>
+                        <Link to="/dumweb">DumWeb</Link>
+                    </div>
                 </div>
             </nav>
         </div>
-    )
-    // return (
-    //     <div className="headerContainer">
-    //         <nav>
-    //             <div className="menu">
-    //                 <h1 onClick={() => navigate('/')}> &lt; Noah Duminil &#47; &gt; </h1>
-    //                 <FaBars id="menu-button" onClick={toggleMenu} size={35} className="i" />
-    //             </div>
-    //             <div className="nav-center">
-    //                 <ul id="menu" style={{ display: menuOpen ? 'block' : 'none' }}>
-    //                     <li>
-    //                         {location.pathname !== "/about" && <Link to="/about">Ma présentation</Link>}
-    //                     </li>
-    //                     <li>
-    //                         {location.pathname !== "/skill" && <Link to="/skill">Mes compétences</Link>}
-    //                     </li>
-    //                     <li>
-    //                         {location.pathname !== "/project" && <Link to="/project">Mes projets</Link>}
-    //                     </li>
-    //                 </ul>
-    //             </div>
-    //         </nav>
-    //     </div>
 
-    // )
+    )
 }
 
 export default Header
+
+// <div className="headerContainer">
+//     <nav style={{
+//         flexDirection: menuOpen ? 'column' : 'row',
+//     }}>
+//         <div className="menu">
+//             <h1 onClick={() => navigate('/')}> &lt; Noah Duminil &#47; &gt; </h1>
+//             {isMobile && (
+//                 <FaBars id="menu-button" onClick={toggleMenu} size={35} className="i" />
+//             )}
+//         </div>
+//         <div className="nav-center">
+//             <div className="navList" style={{
+//                 display: menuOpen || !isMobile ? 'flex' : 'none',
+//                 flexDirection: menuOpen || isMobile ? 'column' : 'row',
+//             }}>
+//                 <a href="">{<Link to="/about">About</Link>}</a>
+//                 <a href="">{<Link to="/skill">Skills</Link>}</a>
+//                 <a href="">{<Link to="/project">Projects</Link>}</a>
+//             </div>
+//         </div>
+//     </nav>
+// </div>
