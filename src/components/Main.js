@@ -95,7 +95,7 @@ const About = () => {
         <div className="separation-bar"></div>
         <div id='project' className="project">
           <h1>Projets</h1>
-          <h2>Voici ma gallerie de projets pour en apprendre plus sur mon travail.</h2>
+          <h2>Voici ma galerie de projets pour en apprendre plus sur mon travail.</h2>
           <div className="carousel">
             <div className="carousel-card">
               <div class="top left"></div>
