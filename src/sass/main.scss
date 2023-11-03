@@ -1,7 +1,6 @@
 @import "variables";
 
 .App {
-    // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1084%26quot%3b)' fill='none'%3e%3crect width='2560' height='1440' x='0' y='0' fill='rgba(63%2c 78%2c 79%2c 1)'%3e%3c/rect%3e%3cpath d='M2375.25%2c1478.033C2461.882%2c1476.532%2c2537.283%2c1421.6%2c2578.163%2c1345.205C2616.781%2c1273.038%2c2609.691%2c1187.209%2c2568.822%2c1116.293C2527.891%2c1045.27%2c2457.129%2c997.025%2c2375.25%2c993.109C2285.794%2c988.831%2c2192.767%2c1019.298%2c2146.711%2c1096.106C2099.552%2c1174.754%2c2112.692%2c1273.763%2c2159.779%2c1352.454C2205.53%2c1428.911%2c2286.163%2c1479.577%2c2375.25%2c1478.033' fill='rgba(246%2c 245%2c 236%2c 0.7)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M703.065%2c1537.948C824.647%2c1535.679%2c918.159%2c1440.265%2c974.397%2c1332.447C1026.064%2c1233.391%2c1024.434%2c1119.101%2c973.363%2c1019.737C916.937%2c909.954%2c826.465%2c801.585%2c703.065%2c804.543C582.635%2c807.429%2c511.361%2c926.076%2c454.314%2c1032.177C401.293%2c1130.791%2c364.189%2c1242.444%2c413.603%2c1342.914C468.637%2c1454.812%2c578.388%2c1540.275%2c703.065%2c1537.948' fill='rgba(246%2c 245%2c 236%2c 0.7)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M967.61%2c1328.271C1105.133%2c1331.053%2c1220.915%2c1236.766%2c1290.026%2c1117.838C1359.522%2c998.248%2c1387.012%2c849.198%2c1314.433%2c731.453C1244.548%2c618.079%2c1100.341%2c583.837%2c967.61%2c594.782C853.597%2c604.184%2c765.527%2c682.926%2c707.478%2c781.504C648.334%2c881.942%2c616.947%2c999.982%2c667.023%2c1105.235C724.473%2c1225.988%2c833.914%2c1325.566%2c967.61%2c1328.271' fill='rgba(246%2c 245%2c 236%2c 0.7)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M528.173%2c875.593C663.146%2c878.987%2c778.308%2c787.204%2c845.236%2c669.944C911.534%2c553.788%2c931.061%2c408.56%2c859.074%2c295.841C791.232%2c189.612%2c654.21%2c172.131%2c528.173%2c173.473C405.236%2c174.782%2c272.815%2c197.52%2c209.258%2c302.761C144.055%2c410.729%2c176.222%2c544.463%2c237.575%2c654.664C301.014%2c768.613%2c397.796%2c872.315%2c528.173%2c875.593' fill='rgba(246%2c 245%2c 236%2c 0.7)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M2479.639%2c1162.675C2586.411%2c1154.762%2c2684.562%2c1107.542%2c2741.437%2c1016.833C2802.372%2c919.648%2c2829.792%2c795.97%2c2771.508%2c697.173C2713.934%2c599.579%2c2592.95%2c573.191%2c2479.639%2c573.057C2366.03%2c572.923%2c2251.352%2c603.15%2c2186.574%2c696.482C2111.663%2c804.413%2c2070.811%2c950.123%2c2140.733%2c1061.351C2207.991%2c1168.342%2c2353.61%2c1172.015%2c2479.639%2c1162.675' fill='rgba(246%2c 245%2c 236%2c 0.7)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M2418.999%2c1091.028C2553.78%2c1101.987%2c2686.726%2c1019.376%2c2743.88%2c896.822C2794.939%2c787.337%2c2727.576%2c670.456%2c2662.643%2c568.584C2604.306%2c477.06%2c2527.525%2c388.499%2c2418.999%2c387.123C2308.608%2c385.723%2c2215.959%2c464.638%2c2164.411%2c562.265C2116.299%2c653.385%2c2129.626%2c757.672%2c2174.327%2c850.513C2227.502%2c960.953%2c2296.827%2c1081.095%2c2418.999%2c1091.028' fill='rgba(246%2c 245%2c 236%2c 0.7)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M2029.924%2c1638.513C2168.152%2c1642.848%2c2308.279%2c1591.215%2c2379.772%2c1472.832C2453.445%2c1350.838%2c2449.285%2c1193%2c2370.819%2c1074.032C2298.938%2c965.048%2c2160.447%2c945.23%2c2029.924%2c942.399C1892.244%2c939.413%2c1734.62%2c941.402%2c1662.414%2c1058.666C1588.046%2c1179.442%2c1640.19%2c1332.222%2c1716.12%2c1452.022C1785.936%2c1562.176%2c1899.573%2c1634.425%2c2029.924%2c1638.513' fill='rgba(246%2c 245%2c 236%2c 0.7)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1084'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
     background-position: center;
     height: 100vh;
     width: 100vw;
@@ -22,11 +21,11 @@
     .enter {
         width: max-content;
         font-size: 20px;
-        border-radius: 30px;
-        border: 0;
+        border-radius: 15px;
+        border: 1px solid $third-color;
         padding: 10px;
-        background-color: #F6F5EC;
-        color: #3F4E4F;
+        background-color: transparent;
+        color: $third-color;
 
         &:hover {
             cursor: pointer;
@@ -51,62 +50,314 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 3vw;
-        .aboutText{
-            height: 80vh;
+        width: 95vw;
+
+        @media screen and (max-width: $md-breakpoint) {
+            flex-direction: column;
+        }
+
+        .aboutText {
             display: flex;
             flex-direction: column;
             text-align: center;
             align-items: center;
             padding-top: 5vh;
-            h1{
+
+            h1 {
                 color: $third-color;
                 font-size: 45px;
                 font-family: 'Monoton', fantasy;
             }
-            p{
+
+            p {
                 font-size: 25px;
             }
-            .button{
+
+            .button {
+                width: 15vw;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
                 color: $third-color;
-                padding: 1.5vh ;
+                padding: 1.5vh;
                 background-color: transparent;
                 border-radius: .3em;
                 overflow: hidden;
                 cursor: pointer;
                 border: 1px solid;
-                
+
+                @media screen and (max-width: $lg-breakpoint) {
+                    width: 30vw;
+                }
+            }
+
+        }
+
+        .aboutImage {
+            img {
+                height: 80vh;
+
+                @media screen and (max-width: $md-breakpoint) {
+                    height: 40vh;
+                }
             }
         }
-        img {
-            height: 80vh;
+
+    }
+
+    .separation-bar {
+        height: 9vh; // Hauteur de la barre
+        width: 1.5vw;
+        background-color: $third-color; // Couleur de la barre
+        margin: 20px 0; // Marge supérieure et inférieure (ajustez selon vos besoins)
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+        margin-bottom: 10vh;
+
+        h1 {
+            color: $third-color;
+        }
+
+        .carousel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .carousel-card {
+                display: flex;
+                width: 80vw;
+                height: 50vh;
+                padding: 2vw;
+                background-color: $second-color;
+                justify-content: space-between;
+                position: relative;
+
+                @media screen and (max-width: $md-breakpoint) {
+                    flex-direction: column;
+                    align-items: center;
+                    height: 80vh;
+                }
+
+                .top,
+                .bottom {
+                    position: absolute;
+                    width: 12vw;
+                    height: 15vh;
+                    pointer-events: none;
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        width: 30vw;
+                        height: 25vh;
+                    }
+                }
+
+                .top {
+                    top: 0;
+                    border-top: 4px solid $third-color;
+                }
+
+                .bottom {
+                    bottom: 0;
+                    border-bottom: 4px solid $third-color;
+                }
+
+                .left {
+                    left: 0;
+                    border-left: 4px solid $third-color;
+                }
+
+                .right {
+                    right: 0;
+                    border-right: 4px solid $third-color;
+                }
+
+                .image-container {
+                    width: 30vw; // Ajustez la largeur au besoin
+                    object-fit: contain; // Pour que l'image couvre complètement le conteneur
+                    object-position: center; // Vous pouvez ajuster ceci pour définir la position de l'image dans le conteneur
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        width: 65vw;
+                        flex-basis: 35%;
+                        max-height: 37vh;
+                    }
+                }
+
+                .text-card {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-basis: 50%;
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        flex-basis: 60%;
+                        overflow: auto;
+                    }
+
+                    .button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 10vw;
+                        color: $third-color;
+                        padding: 1.5vh 1vw;
+                        border-radius: .3em;
+                        cursor: pointer;
+                        border: 1px solid;
+                        text-align: center;
+
+                        @media screen and (max-width: $lg-breakpoint) {
+                            width: 30vw;
+                        }
+                    }
+                }
+
+            }
+
+
+
+            .carousel-btn {
+                margin-top: 5vh;
+                width: 30vw;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    background-color: transparent;
+                    border: 1px solid $third-color;
+                    color: $third-color;
+                    padding: 0 3.5vw;
+                    transition: background-color 0.3s, color 0.3s;
+
+                    &:hover {
+                        background-color: $third-color;
+                        color: $first-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .skills {
+        width: 95vw;
+
+        h1 {
+            color: $third-color;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .framework {
+            padding-top: 5vh;
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .frameworksCard {
+                    position: relative;
+                    display: flex;
+                    background-color: $second-color;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-bottom: 2vh; // Espacement vertical entre les lignes
+                    align-items: center;
+                    justify-content: center;
+                    height: 20vh;
+                    width: 100vw;
+
+
+                    @media screen and (min-width: $md-breakpoint) {
+                        justify-content: space-around;
+                        height: 15vh;
+                        width: calc(23% - 1rem); // Pour avoir 4 cartes par ligne avec un espacement de 1rem
+                        box-sizing: border-box; // Pour prendre en compte la largeur des marges
+                    }
+
+                    img {
+                        max-width: 40%;
+                        max-height: 80%;
+                        display: block;
+                    }
+
+                    .card-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 100%;
+                        height: 100%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                        transition: opacity 0.3s;
+                        text-align: center;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        color: #fff;
+                        border-radius: 5px;
+
+                        h1 {
+                            margin: 1vh;
+                        }
+
+                        .stars {
+                            color: $third-color;
+                        }
+
+                        h2 {
+                            margin: 1vh;
+                            font-size: 15px;
+                        }
+                    }
+
+                    &:hover .card-text {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .flags {
+            display: flex;
+            @media screen and (max-width: $md-breakpoint) {
+                flex-direction: column;
+            }
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 4vw;
+            img {
+                width: 30vh;
+                height: 30vh;
+                object-fit: contain;
+            }
         }
     }
 }
 
 .footer {
-    background-color: #F6F5EC;
+    border-radius: 30px 30px 0 0;
+    background-color: $second-color;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-
-    h2 {
-        color: #3F4E4F;
-    }
+    height: 7vh;
 
     .icon {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 30vw;
 
         a {
-            margin: 10px;
+            color: $third-color;
+
         }
 
         @media screen and (min-width: $md-breakpoint) {
