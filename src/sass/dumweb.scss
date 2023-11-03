@@ -1,0 +1,218 @@
+@import "variables";
+
+.dumweb {
+    .contain {
+        margin: 2vh 5vw;
+
+        h1 {
+            color: $third-color;
+        }
+
+        h2 {
+            color: $third-color;
+            font-size: 20px;
+        }
+
+        .presentation {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .offer {
+            width: 100%;
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .card {
+                    background-color: $second-color;
+                    width: calc(33.33% - 1rem);
+                    height: 65vh;
+                    border: $third-color 1px solid;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 2rem; // Espace entre les cartes
+
+                    h1 {
+                        color: white;
+                        font-size: 24px;
+                        text-align: center;
+                        margin-bottom: 1rem;
+                    }
+
+                    ul {
+                        flex: 1; // Ajuste la hauteur de la liste pour remplir l'espace disponible
+                        padding: 0;
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        li {
+                            margin-bottom: 3vh;
+                            font-size: 21px;
+                        }
+                    }
+
+                    button {
+                        width: 13vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        color: $third-color;
+                        padding: 1.5vh;
+                        background-color: transparent;
+                        border-radius: .3em;
+                        border: 1px solid;
+                        font-size: 17px;
+                        margin-bottom: 1vh;
+
+                        @media screen and (max-width: $lg-breakpoint) {
+                            width: 30vw;
+                        }
+                    }
+
+                }
+
+                @media screen and (max-width: $lg-breakpoint) {
+                    .card {
+                        width: 48%; // Deux cartes par ligne sur tablette
+                        margin: 0 auto; // Centre la troisième carte
+                        margin-bottom: 1vh;
+                    }
+                }
+
+                @media screen and (max-width: $md-breakpoint) {
+                    .card {
+                        width: 100%; // Une carte par ligne sur mobile
+                    }
+                }
+            }
+
+
+
+        }
+
+        .contact {
+            p {
+                font-weight: bold;
+            }
+
+            .contactBoard {
+                display: flex;
+                flex-direction: column;
+                background-color: $second-color;
+                padding: 4vh;
+
+                @media screen and (min-width: $md-breakpoint) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                .flexcol {
+                    flex-basis: 35%;
+
+
+                    .phone {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        border: $third-color 1px solid;
+                        border-radius: 10px;
+                        padding: 0 2vh 3vh 2vh;
+                        margin-bottom: 2vh;
+                    }
+
+                    .Iconflex {
+                        display: flex;
+                        align-items: center;
+
+                        a {
+                            margin-left: 1vw;
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+
+                .hours {
+                    flex-basis: 63%;
+                    border: $third-color 1px solid;
+                    border-radius: 10px;
+                    padding: 0 2vh 3vh 2vh;
+
+                    @media screen and (min-width: $md-breakpoint) and (max-width: $lg-breakpoint) {
+                        flex-basis: 50%;
+                    }
+                    .daysboard{
+                        @media screen and (min-width: $md-breakpoint) {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+                        }
+                    }
+
+                    h1 {
+                        text-align: center;
+                    }
+
+                    .days {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h2 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .footer {
+        border-radius: 30px 30px 0 0;
+        background-color: $second-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 7vh;
+
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            width: 30vw;
+
+            a {
+                color: $third-color;
+
+            }
+
+            @media screen and (min-width: $md-breakpoint) {
+                margin-left: 20px;
+            }
+        }
+
+        .title-nav {
+            @media screen and (min-width: $md-breakpoint) {
+                margin-left: -20px;
+            }
+        }
+    }
+}
