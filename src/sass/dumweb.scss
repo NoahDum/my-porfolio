@@ -36,6 +36,8 @@
                     flex-direction: column;
                     align-items: center;
                     margin-bottom: 2rem; // Espace entre les cartes
+                    overflow: auto;
+
 
                     h1 {
                         color: white;
