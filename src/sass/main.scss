@@ -201,7 +201,11 @@
                         flex-basis: 60%;
                         overflow: auto;
                     }
-
+                    .with-api {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 70%;
+                      }
                     .button {
                         display: flex;
                         align-items: center;

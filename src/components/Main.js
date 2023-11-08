@@ -5,6 +5,7 @@ import LabelCars from '../img/Cars3000.png'
 import MoviesShuffle from '../img/Movieshuffle.png'
 import PizzaOrder from '../img/PizzaOrder.png'
 import Disney from '../img/Disney.png'
+import Rekonnect from '../img/Rekonnect.png'
 import Html from '../img/html-logo.png'
 import Css from '../img/CSS-logo.png'
 import Sass from '../img/Sass.png'
@@ -50,6 +51,13 @@ const About = () => {
       text: 'Le but de cette application est de partager les créations des partenaires de Disney en les filtrants par certains critères, tel que les derniers ajouts ou encore la compagnie de production à laquelle il appartient. Enfin je propose de courtes bande d’annonces pour chacun des films.',
       link: 'https://github.com/NoahDum/disney_clone',
     },
+    {
+      url: Rekonnect,
+      title: 'Rekonnect',
+      text: 'Rekonnect est une application qui met en relation acheteurs, vendeurs et réparateurs pour donner une seconde vie a tout nos objets connectés. L’application permet de créer un compte en choisissant sont statut, de poster des annonces pour vendre un service ou un produit mais également d’en acheter (fictivement car le site n’est pas en ligne). Enfin toute les requètes sont protégées par des tokens de connexion. ',
+      link: 'https://github.com/NoahDum/rekonnect',
+      api: 'https://github.com/NoahDum/rekonnect_api-',
+    },
   ];
 
 
@@ -76,7 +84,7 @@ const About = () => {
 
   return (
     <div className='main'>
-      <Header/>
+      <Header />
       <div className="contain container">
         <div id='about' className="about">
           <div className='aboutImage'>
@@ -104,7 +112,13 @@ const About = () => {
               <div className="text-card">
                 <h1>{images[currentIndex].title}</h1>
                 <p>{images[currentIndex].text}</p>
-                <a className='button' href={images[currentIndex].link} target='blank'> <FiGithub size={20} className='buttonIcon' />Git <FaAngleDoubleRight size={20} className='buttonIcon' /></a>
+                <div className={`btn-div ${images[currentIndex].api ? 'with-api' : ''}`}>
+                  <a className='button' href={images[currentIndex].link} target='blank'> <FiGithub size={20} className='buttonIcon' />Git <FaAngleDoubleRight size={20} className='buttonIcon' /></a>
+                  {images[currentIndex].api && (
+                    <a className='button' href={images[currentIndex].api} target='blank'> <FiGithub size={20} className='buttonIcon' />Git API <FaAngleDoubleRight size={20} className='buttonIcon' /></a>
+                  )}
+                </div>
+
               </div>
             </div>
             <div className="carousel-btn">
@@ -245,7 +259,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
