@@ -46,7 +46,7 @@ const DumWeb = () => {
               </ul>
               <button>A partir de 170€</button>
             </div>
-            <div className="card">
+            {/* <div className="card">
               <h1>Portail SaaS</h1>
               <ul>
                 <li>Un rendez-vous pour connaître vos besoins.</li>
@@ -54,7 +54,7 @@ const DumWeb = () => {
                 <li>Livraison d’un portail web avec prise de rendez-vous, automatisations de messages ...</li>
               </ul>
               <button>200€ / mois</button>
-            </div>
+            </div> */}
           </div>
           <div className="contact">
             <h2>Contacter l'entreprise</h2>
